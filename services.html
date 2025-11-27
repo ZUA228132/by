@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Електронні сервіси — ГУНП в Одеській області</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Електронні сервіси та онлайн-форми звернень громадян до поліції Одеської області." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-mark">OD</div>
+        <div class="logo-text">
+          <div class="logo-title">ГУНП в Одеській області</div>
+          <div class="logo-subtitle">Офіційний інформаційний ресурс (демо)</div>
+        </div>
+      </a>
+      <nav class="main-nav" aria-label="Головне меню">
+        <button class="nav-toggle" aria-label="Відкрити меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Головна</a></li>
+          <li><a href="about.html" class="nav-link">Про управління</a></li>
+          <li><a href="services.html" class="nav-link active">Е-сервіси</a></li>
+          <li><a href="reports.html" class="nav-link">Звітність</a></li>
+          <li><a href="contacts.html" class="nav-link">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <p class="page-kicker">Онлайн-допомога</p>
+        <h1 class="page-title">Електронні сервіси для громадян</h1>
+        <p class="page-subtitle">
+          На цій сторінці наведено приклад структури електронних сервісів, які можуть бути реалізовані для взаємодії
+          громадян з поліцією в онлайн-форматі.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="two-column">
+          <div>
+            <h2 id="appeal">Подання електронного звернення (демо-форма)</h2>
+            <p>
+              Для офіційного звернення громадянина необхідно забезпечити ідентифікацію особи та належний захист персональних даних.
+              Нижче наведено зразок форми, яку можна інтегрувати з відповідною інформаційною системою.
+            </p>
+            <form class="form-card" aria-label="Форма електронного звернення (демо)">
+              <div class="form-row">
+                <label for="fullName">ПІБ заявника</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Прізвище Ім’я По батькові" required>
+              </div>
+              <div class="form-row">
+                <label for="contact">Контактні дані</label>
+                <input type="text" id="contact" name="contact" placeholder="Телефон або електронна пошта" required>
+              </div>
+              <div class="form-row">
+                <label for="topic">Тема звернення</label>
+                <input type="text" id="topic" name="topic" placeholder="Короткий зміст питання" required>
+              </div>
+              <div class="form-row">
+                <label for="message">Текст звернення</label>
+                <textarea id="message" name="message" rows="6" placeholder="Детальний опис обставин, прохання, пропозиції тощо" required></textarea>
+              </div>
+              <div class="form-row form-row-inline">
+                <div>
+                  <label for="address">Населений пункт / адреса</label>
+                  <input type="text" id="address" name="address" placeholder="Місто, район, вулиця (за наявності)" />
+                </div>
+                <div>
+                  <label for="category">Категорія звернення</label>
+                  <select id="category" name="category">
+                    <option value="">Оберіть категорію</option>
+                    <option value="crime">Повідомлення про кримінальне правопорушення</option>
+                    <option value="administrative">Повідомлення про адміністративне правопорушення</option>
+                    <option value="complaint">Скарга на дії/бездіяльність</option>
+                    <option value="proposal">Пропозиція / звернення іншого характеру</option>
+                  </select>
+                </div>
+              </div>
+              <p class="form-note">
+                * На демонстраційній версії сайту форма не надсилається. Для впровадження необхідно налаштувати обробку звернень
+                відповідно до вимог законодавства про звернення громадян та захист персональних даних.
+              </p>
+              <button type="button" class="btn btn-primary" disabled>Надіслати звернення (демо)</button>
+            </form>
+          </div>
+          <aside class="info-panel">
+            <h3>Увага</h3>
+            <p>
+              У невідкладних ситуаціях (загроза життю, здоров’ю, безпеці) необхідно негайно телефонувати <strong>102</strong>.
+              Електронні форми не є каналом екстреного реагування.
+            </p>
+            <h3>Інші можливі сервіси</h3>
+            <ul>
+              <li>Запис на особистий прийом керівництва</li>
+              <li>Перевірка статусу поданого звернення</li>
+              <li>Отримання довідкової інформації</li>
+              <li>Онлайн-реєстрація на профілактичні заходи</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div>© <span id="year"></span> ГУНП в Одеській області.</div>
+        <div class="footer-note">
+          Сторінка є демонстраційним прикладом електронних сервісів. Для фактичного надання послуг необхідне підключення до офіційних інформаційних систем.
+        </div>
+      </div>
+      <nav aria-label="Нижнє меню" class="footer-nav">
+        <a href="index.html">Головна</a>
+        <a href="reports.html">Публічна інформація</a>
+        <a href="contacts.html">Контакти</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
